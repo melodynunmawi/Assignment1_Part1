@@ -1,44 +1,41 @@
-/* This file is where all your work should go for Assignment 2.  Please remove this comment. */
 
-function cleanUpIndex(){
-    const divContact = document.querySelector('.contact')
-    divContact.removeChild(divContact.childNodes)  
+
+function cleanUpIndex() {
+    let classMain = document.querySelector('.main')
+    while (classMain.firstChild) {
+        classMain.removeChild(classMain.firstChild)
+    }
 }
-// cleanUpIndex();
 
-// function createSingleIndex(){
-//     const banner = document.querySelector()
+function createSingleIndex(contact) {
+    return <a href="page3.html"><div class="contact">${contact.name}</div></a>
+}
 
-// }
+function renderIndex(contactList) {
+    let classMain = document.querySelector('.main')
+    for (let i = 0; i < contactList.length;i++) {
+        classMain.insertAdjacentHTML('beforeend', createSingleIndex(contactList[i]))
+    }
+}
 
-
-// function renderIndex(contactList){
-//     const contactList = [  
-//         { 
-//             name: "Oliver Queen", 
-//             phone: "778-555-1234", 
-//             address: "101 Main St, Star City, USA",    
-//             email: "greenarrow@watchtower.com",  
-//         },   
-//         {    
-//             name: "Jessica Cruz",    
-//             phone: "123-555-5555",    
-//             address: "Portland Oregon",    
-//             email: "greenlantern@watchtower.com",  
-//         }
-//     ]
-
-//  }
-//  function cleanUpView(){
-
-//  }
 //  function renderView(){
+//     let contactType = ['name', 'email', 'phone', 'address']
+//     let pushedContent = []
+//     pushedContent.push(<div class="contact${contactType[0]}">${contact[contactType[0]]}</div>)
+
+//     for (let i = 1; i <= 3; i++) {
+//         pushedContent.push(<div class="contact${contactType[i]}">${contactType[i]}: ${contact[contactType[i]]}</div>)
+//     }
      
 // }
-//  function renderView(contactList[0]){
+// //  function renderView(contactList[0]){
 
-//  }
+// //  }
 //  function cleanUpCreate(){
+//     let classMain = document.querySelector('.main')
+//     while (classMain.firstChild) {
+//         classMain.removeChild(classMain.firstChild)
+//     }
 
 // }
 // function renderCreate(){
