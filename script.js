@@ -18,33 +18,33 @@ function renderIndex(contactList) {
     }
 }
 
-function cleanUpView(){
-    let classMain = document.querySelector('.form')
-    while (classMain.firstChild) {
-        classMain.removeChild(classMain.firstChild)
-    }
-}
+// function cleanUpView(){
+//     let classMain = document.querySelector('.form')
+//     while (classMain.firstChild) {
+//         classMain.removeChild(classMain.firstChild)
+//     }
+// }
 
- function renderView(contactList){
-    let contactType = ['name', 'email', 'phone', 'address']
-    let pushedContent = []
-    pushedContent.push(<div class="contact${contactType[0]}">${contact[contactType[0]]}</div>)
+//  function renderView(contactList){
+//     let contactType = ['name', 'email', 'phone', 'address']
+//     let pushedContent = []
+//     pushedContent.push(<div class="contact${contactType[0]}">${contact[contactType[0]]}</div>)
 
-    for (let i = 1; i <= 3; i++) {
-        pushedContent.push(<div class="contact${contactType[i]}">${contactType[i]}: ${contact[contactType[i]]}</div>)
-    }    
-}
- function cleanUpCreate(){
-    let classMain = document.querySelector('.contactname')
-    while (classMain.firstChild) {
-        classMain.removeChild(classMain.firstChild)
-    }
+//     for (let i = 1; i <= 3; i++) {
+//         pushedContent.push(<div class="contact${contactType[i]}">${contactType[i]}: ${contact[contactType[i]]}</div>)
+//     }    
+// }
+//  function cleanUpCreate(){
+//     let classMain = document.querySelector('.contactname')
+//     while (classMain.firstChild) {
+//         classMain.removeChild(classMain.firstChild)
+//     }
 
-}
-function renderCreate(){
-    let classMain = document.querySelector('.contactname')
-    for (let i = 0; i < contactList.length;i++) {
-        classMain.insertAdjacentHTML('beforeend', createSingleIndex(contactList[i]))
-    }
+// }
+// function renderCreate(){
+//     let classMain = document.querySelector('.contactname')
+//     for (let i = 0; i < contactList.length;i++) {
+//         classMain.insertAdjacentHTML('beforeend', createSingleIndex(contactList[i]))
+//     }
 
-}
+// }
