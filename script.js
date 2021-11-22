@@ -18,26 +18,26 @@ function renderIndex(contactList) {
     }
 }
 
-//  function renderView(){
-//     let contactType = ['name', 'email', 'phone', 'address']
-//     let pushedContent = []
-//     pushedContent.push(<div class="contact${contactType[0]}">${contact[contactType[0]]}</div>)
+ function renderView(){
+    let contactType = ['name', 'email', 'phone', 'address']
+    let pushedContent = []
+    pushedContent.push(<div class="contact${contactType[0]}">${contact[contactType[0]]}</div>)
 
-//     for (let i = 1; i <= 3; i++) {
-//         pushedContent.push(<div class="contact${contactType[i]}">${contactType[i]}: ${contact[contactType[i]]}</div>)
-//     }
+    for (let i = 1; i <= 3; i++) {
+        pushedContent.push(<div class="contact${contactType[i]}">${contactType[i]}: ${contact[contactType[i]]}</div>)
+    }
      
-// }
-// //  function renderView(contactList[0]){
+}
+ function renderView(contactList[0]){
 
-// //  }
-//  function cleanUpCreate(){
-//     let classMain = document.querySelector('.main')
-//     while (classMain.firstChild) {
-//         classMain.removeChild(classMain.firstChild)
-//     }
+ }
+ function cleanUpCreate(){
+    let classMain = document.querySelector('.main')
+    while (classMain.firstChild) {
+        classMain.removeChild(classMain.firstChild)
+    }
 
-// }
+}
 // function renderCreate(){
     
 // }
